@@ -40,14 +40,14 @@ div#crypto > p {
   margin: 0;
 }
 
-div#crypto-top {
+div#cat-facts {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   margin-bottom: 5px;
 }
 
-div#crypto-top > span {
-  margin-left: 10px;
+div#cat-facts div {
+  margin: 10px;
 }
 
 div#weather {

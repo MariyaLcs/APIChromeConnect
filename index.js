@@ -13,7 +13,7 @@ fetch(
     document.getElementById("author").textContent = `By: Dodi Achmad`;
   });
 
-fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
+fetch("https://cat-fact.herokuapp.com/facts")
   .then((res) => {
     if (!res.ok) {
       throw Error("Something went wrong");
@@ -21,14 +21,10 @@ fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
     return res.json();
   })
   .then((data) => {
-    document.getElementById("crypto-top").innerHTML = `
-            <img src=${data.image.small} />
-            <span>${data.name}</span>
-        `;
-    document.getElementById("crypto").innerHTML += `
-            <p>🎯$${data.market_data.current_price.usd}</p>
-            <p>👆$${data.market_data.high_24h.usd}</p>
-            <p>👇$${data.market_data.low_24h.usd}</p>
+    document.getElementById("cat-facts").innerHTML = `
+            <div>Fact 1: ${data[0].text}</div>
+            <div>Fact 2: ${data[1].text}</div>
+            
         `;
   })
   .catch((err) => console.error(err));
