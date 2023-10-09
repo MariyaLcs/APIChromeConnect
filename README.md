@@ -1,5 +1,7 @@
 Quick start:
 
+chrome://extensions/
+
 ```
 $ npm install
 $ npm start
