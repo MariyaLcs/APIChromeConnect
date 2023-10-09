@@ -18,3 +18,11 @@ To use our Chrome extension, follow these quick steps:
 6. Our extension should now be installed and active.
 
 Enjoy using our Chrome extension and exploring the project dashboard!
+
+## Explore Public APIs
+
+Looking for more public APIs to integrate into your projects? Check out this gigantic list of public APIs for inspiration:
+
+[Public APIs](https://github.com/public-apis/public-apis)
+
+This curated collection offers a wide range of APIs across various categories, making it a valuable resource for developers seeking data and services to enhance their applications.
